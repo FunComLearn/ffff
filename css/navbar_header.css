@@ -1,0 +1,183 @@
+li, a, button, .dropdown .dropbtn {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+.navigation {
+    margin: 0;
+    width: 100%;
+    padding: 0 2.5%;
+    display: flex;
+    position: fixed;
+    flex-flow: row;
+    justify-content: flex-start; /* flex end */
+    align-items: center;
+    background-color: #1f2224;
+    border-color: #101010;
+    z-index: 9999999;
+    /* added */
+
+
+    /* bottom: 0; */ /* Appear on the bottom of the page */
+}
+
+.navigation h1{
+    color: white;
+    height: 100%;
+    margin-right: auto;
+    vertical-align: middle;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+/* PhoTech.com text on nav bar */
+.navigation h1 span{
+    font-size: 32px;
+    font-weight: 500;
+    padding-right: 10px;
+    cursor: pointer;
+    white-space: nowrap;
+    /* text-shadow: 1.5px 1.5px rgba(0,0,0,0.5); */
+}
+
+/* team akatsuki (title bar) */
+.navigation .bta {
+    font-weight: 500;
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.navigation .pho {
+    color: orangered;
+    padding: 0;
+}
+
+div.overlay span.pho{
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+    vertical-align: middle;
+}
+
+.nav-links li a{
+    transition: all o.5s ease 0s;
+}
+
+.nav-links li a:hover{
+    color: #0088a9;
+}
+
+button {
+    padding: 7px 22px;
+    /* background-color: rgba(0, 136, 169, 1); */
+    background-color: rgba(215, 31, 36, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all o.5s ease;
+    display: block;
+}
+
+button:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+    transition: all 0.3s ease-out;
+}
+button.dropbtn:hover, a:hover {
+    transition: all 0.2s ease-out;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+  
+/* Dropdown button */
+.dropdown .dropbtn {
+    padding: 16px 50px;
+    padding-left: 35px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    margin: 0;
+}
+  
+/* Add a background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+    color: rgba(0, 136, 169, 0.8);
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    max-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+    z-index: 10000;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+  
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border-radius: 7px;
+    border-top: 1px dotted #ddd;
+}
+ 
+  /* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Triangle in Categories dropdown*/
+.triangle {
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+.hidden-content {
+    position: absolute;
+
+}
+
+@media only screen and (max-width: 900px) {
+    .bta {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    a#home, .bta {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 544px) {
+    button.dropbtn {
+        padding-bottom: 25px;
+    }
+}

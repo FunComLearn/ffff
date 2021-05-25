@@ -1,0 +1,75 @@
+/* Expand Button */
+.expand img {
+    width: 20px;
+}
+
+.expand {
+    width: 9px;
+    height: 10px;
+    position: absolute;
+    margin-left: 240px;
+    margin-top: 240px;
+}
+
+
+/* Tooltip */
+.tooltip {
+    display:inline-block;
+    position:relative;
+    /* border-bottom:1px dotted #666; */
+    text-align:center;
+}
+
+.tooltip p {
+    margin:2px;
+    font-size: 12px;
+}
+
+.tooltip .left {
+    min-width: 100px;
+    max-width: 500px;
+    top:40%;
+    right:100%;
+    margin-right:5px;
+    /* margin-top: 2px; */
+    margin-bottom: 18px;
+    transform:translate(0, -50%);
+    color:white;
+    background-color: rgba(0,0,0, 0.8);
+    font-weight:normal;
+    font-size:10px;
+    border-radius:4px;
+    position:absolute;
+    z-index:99999999;
+    box-sizing:border-box;
+    display:none;
+    /* border:2px solid #363636; */ /* for that glowing look */
+}
+
+.tooltip:hover .left {
+    display:block;
+}
+
+
+/* For Ballon tooltip (left) */
+/* .tooltip .left i {
+    position:absolute;
+    top:50%;
+    left:100%;
+    margin-top:-6px;
+    width:6px;
+    height:11px;
+    overflow:hidden;
+}
+
+.tooltip .left i::after {
+    content:'';
+    position:absolute;
+    width:6px;
+    height:6px;
+    left:0;
+    top:50%;
+    transform:translate(-50%,-50%) rotate(-45deg);
+    background-color:#FFFFE0;
+    border:1px solid #DCA;
+} */
